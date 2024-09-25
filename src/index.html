@@ -9,13 +9,8 @@
   <body>
     <h1>Список задач</h1>
     <div class="form-container">
-      <form id="taskForm">
-        <input
-          type="text"
-          id="taskInput"
-          placeholder="Введите задачу"
-          required
-        />
+      <form>
+        <input type="text" placeholder="Введите задачу" required />
         <button type="submit">Добавить</button>
       </form>
     </div>
@@ -27,8 +22,20 @@
           <th>Выполненные</th>
         </tr>
       </thead>
-      <tbody id="taskList"></tbody>
+      <tbody>
+        <td>
+          Task #1
+          <select class="select-status">
+            <option>Переместить</option>
+            <option>В работе</option>
+            <option>Выполненные</option>
+          </select>
+        </td>
+        <td></td>
+        <td>
+          <button class="delete-button">Удалить</button>
+        </td>
+      </tbody>
     </table>
-    <script src="./app.js"></script>
   </body>
 </html>
